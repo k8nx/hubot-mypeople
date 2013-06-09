@@ -17,7 +17,7 @@ vi package.json
   "dependencies": {
     "hubot":         ">= 2.5.1",
     "hubot-scripts": ">= 2.4.2",
-    "hubot-mypeople": "0.1.0",
+    "hubot-mypeople": "0.1.1",
     "express": ">=3.0.0"
   },
 ...
