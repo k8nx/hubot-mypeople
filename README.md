@@ -10,6 +10,8 @@ ex) http://xxx.geekple.com/mypeople/callback
 
 ```shell
 export HUBOT_MYPEOPLE_KEY='API KEY'
+export HUBOT_MYPEOPLE_NICK='hubot'
+export PORT=xxx
 vi package.json
 ...
   "dependencies": {

@@ -26,13 +26,14 @@ class MyPeople extends Adapter
     options =
       key : process.env.HUBOT_MYPEOPLE_KEY
       nick : process.env.HUBOT_MYPEOPLE_NICK or @robot.name
+      callback : process.env.HUBOT_MYPEOPLE_CALLBACK or '/mypeople/callback'
 
     @robot.name = options.nick
 
     iface = new Iface.Receiver options.key
     iface.addListener 'message', (e) ->
       self.receive new TextMessage e, e.message
-    iface.start()
+    @robot.router.post options.callback, iface.receiver.bind(iface)
     self.emit 'connected'
 
     @iface = iface
