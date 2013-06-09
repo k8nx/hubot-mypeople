@@ -1,6 +1,6 @@
 {
   "name": "hubot-mypeople",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "MyPeople adapter for Hubot",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,7 +9,7 @@
   "main": "./lib/main",
   "dependencies": {
     "request": ">=2.21.0",
-    "mypeople": "0.0.4"
+    "mypeople": "0.1.2"
   },
   "repository": {
     "type": "git",
