@@ -9,20 +9,22 @@ ex) http://xxx.geekple.com/mypeople/callback
 하루 2000건 제한은 좀 적은 것 같다. 늘려주삼....
 
 ```shell
-export HUBOT_MYPEOPLE_KEY='API KEY'
-export HUBOT_MYPEOPLE_NICK='hubot'
+export HUBOT_MYPEOPLE_KEY='API KEY' # required
+export HUBOT_MYPEOPLE_NICK='hubot' # default hubot
 export PORT=xxx
 vi package.json
 ...
   "dependencies": {
     "hubot":         ">= 2.5.1",
     "hubot-scripts": ">= 2.4.2",
-    "hubot-mypeople": "0.0.2",
+    "hubot-mypeople": "0.1.0",
     "express": ">=3.0.0"
   },
 ...
 
 bin/hubot -a mypeople
+# or
+PORT=3000 bin/hubot -a mypeople
 ```
 
 [MyPeople API](https://github.com/dgkim84/node-mypeople)
