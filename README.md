@@ -1,30 +1,13 @@
 # MyPeople Hubot Adapter
 
-## Usage
+문서는 [MyPeople Node API Wiki](https://github.com/dgkim84/node-mypeople/wiki)와 통합하여 관리합니다.
 
-알림 콜백 주소는 여러분이 쓰시는 서버 HTTP 주소 + /mypeople/callback 를 적어주시면 됩니다.
 
-ex) http://xxx.geekple.com/mypeople/callback
+## How to contribute
 
-하루 2000건 제한은 좀 적은 것 같다. 늘려주삼....
-
-```shell
-export HUBOT_MYPEOPLE_KEY='API KEY' # required
-export HUBOT_MYPEOPLE_NICK='hubot' # default hubot
-export PORT=xxx
-vi package.json
-...
-  "dependencies": {
-    "hubot":         ">= 2.5.1",
-    "hubot-scripts": ">= 2.4.2",
-    "hubot-mypeople": "0.1.1",
-    "express": ">=3.0.0"
-  },
-...
-
-bin/hubot -a mypeople
-# or
-PORT=3000 bin/hubot -a mypeople
-```
-
-[MyPeople API](https://github.com/dgkim84/node-mypeople)
+* 위키 문서는 누구나 변경이 가능합니다.
+* 코드 변경은 다음과 같은 절차로 진행합니다.
+ * fork
+ * branch 생성
+ * code 변경 && comit && push
+ * pull request
