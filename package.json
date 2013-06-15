@@ -1,6 +1,6 @@
 {
   "name": "hubot-mypeople",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "MyPeople adapter for Hubot",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,7 +9,7 @@
   "main": "./lib/main",
   "dependencies": {
     "request": ">=2.21.0",
-    "mypeople": "0.1.2"
+    "mypeople": "0.2.0"
   },
   "repository": {
     "type": "git",
@@ -19,7 +19,9 @@
     "url": "https://github.com/dgkim84/hubot-mypeople/issues"
   },
   "author": "Daegeun Kim <dgkim84@gmail.com>",
-  "license": "MIT",
+  "licenses": [
+    {"type": "MIT", "url": "https://github.com/dgkim84/hubot-mypeople/blob/master/LICENSE"}
+  ],
   "keywords": [
     "hubot",
     "mypeople",

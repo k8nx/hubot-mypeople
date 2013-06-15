@@ -11,3 +11,7 @@
  * branch 생성
  * code 변경 && comit && push
  * pull request
+
+## License
+
+MIT
